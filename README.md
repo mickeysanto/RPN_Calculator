@@ -5,10 +5,10 @@ This repository contains an implementation of a command line Reverse Polish Nota
 A Unit Testing file for the program is also included.
 
 ### Line by line:
-> 5 ```
-> 5 ```
-> + ```
-= 10 ```
+-> 5 
+-> 5 
+-> + 
+= 10 
 
 ### Single line:
 > 5 5 +

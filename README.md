@@ -54,16 +54,16 @@ you should be able to also combine the two. Designing it this way also removes t
 
 My code also works for input where the values and operator symbols are mixed in a single line:
 
-ex) 5 5 + 5
+> 5 5 + 5
 
 I at first had the output produce something like this where the result of 5 5 + and 5 are both displayed and are printed as:
-10 5
+> 10 5
 
 But considering the example input/output given in the ruberic does not account for this and all output on the ruberic was a single value, I decided that in this case I would also only print a single value to the screen, 
 which is the next value in the stack that could be popped. I did this purely to keep the format of the output consistent in the program and inline with the ruberic. So my input/output in this case looks like this:
 
 > 5 5 + 5
-5
+> 5
 
 The resulting 10 computed from 5 5 + is still pushed on the stack but the leftover "5" is the only one displayed so that if the user wants to add anymore numbers to the equation they can easily see what the last value is.
 

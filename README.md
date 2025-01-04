@@ -12,12 +12,12 @@ A Unit Testing file for the program is also included.
 
 ### Single line:
 > 5 5 + <br />
-10
+= 10
 
 ### Both:
 > 5 5 <br />
 > '+' <br />
-10
+= 10
 
 ## Design Choices
 I built the progam to be 3 seperate classes:

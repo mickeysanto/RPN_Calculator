@@ -7,17 +7,17 @@ A Unit Testing file for the program is also included.
 ### Line by line:
 > 5 <br />
 > 5 <br />
-> + <br />
+> '+' <br />
 = 10 
 
 ### Single line:
 > 5 5 + <br />
-= 10
+10
 
 ### Both:
 > 5 5 <br />
-> + <br />
-= 10
+> '+' <br />
+10
 
 ## Design Choices
 I built the progam to be 3 seperate classes:
@@ -63,7 +63,7 @@ But considering the example input/output given in the ruberic does not account f
 which is the next value in the stack that could be popped. I did this purely to keep the format of the output consistent in the program and inline with the ruberic. So my input/output in this case looks like this:
 
 > 5 5 + 5 <br />
-> 5
+5
 
 The resulting 10 computed from 5 5 + is still pushed on the stack but the leftover "5" is the only one displayed so that if the user wants to add anymore numbers to the equation they can easily see what the last value is.
 

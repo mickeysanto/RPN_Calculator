@@ -68,7 +68,7 @@ which is the next value in the stack that could be popped. I did this purely to 
 The resulting 10 computed from 5 5 + is still pushed on the stack but the leftover "5" is the only one displayed so that if the user wants to add anymore numbers to the equation they can easily see what the last value is.
 
 
-
+To run the code just import the files to a visual studio console application and run the solution.
 
 
 

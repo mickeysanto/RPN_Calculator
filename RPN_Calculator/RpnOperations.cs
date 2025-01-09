@@ -15,6 +15,8 @@ namespace RPN_Calculator
         private const string MultiplicationOperator = "*";
         private const string DivisionOperator = "/";
 
+        public const string SqrtOperator = "sqrt";
+
         #endregion
 
         //Performs arithmetic and returns result given a valid operator symbol
@@ -37,7 +39,10 @@ namespace RPN_Calculator
                     break;
 
                 case DivisionOperator:
-                    result = value1 / value2;
+                    result = Divide(value1, value2);
+                    break;
+                case SqrtOperator:
+                    result = Sqrt(value1);
                     break;
 
                 default:
@@ -45,6 +50,26 @@ namespace RPN_Calculator
             }
 
             return result;
+        }
+
+        private static float Divide(float value1, float value2)
+        {
+            if (value2 == 0)
+            {
+                throw new Exception("Cannot divide by 0.");
+            }
+
+            return value1 / value2;
+        }
+
+        private static float Sqrt(float value)
+        {
+            if(value < 0)
+            {
+                throw new Exception("Cannot take the square root of a negtive.");
+            }
+
+            return (float)Math.Sqrt(value);
         }
     }
 }

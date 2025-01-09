@@ -59,5 +59,12 @@ namespace RPN_Unit_Testing
             Assert.AreEqual(inputManager.ProcessInput("2 2 + 3 - 4"), "4");
             Assert.AreEqual(inputManager.ProcessInput("-"), "-3");
         }
+
+        [TestMethod]
+        public void Test_Sqrt()
+        {
+            Assert.AreEqual(inputManager.ProcessInput("4"), "4");
+            Assert.AreEqual(inputManager.ProcessInput("sqrt"), "2");
+        }
     }
 }

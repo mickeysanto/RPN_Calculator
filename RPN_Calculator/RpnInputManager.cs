@@ -62,8 +62,18 @@ namespace RPN_Calculator
             float value1, value2, result;
             string resultReturn = "";
 
-            if (inputValues.Count < 2)
+            if (operation == RpnOperations.SqrtOperator && inputValues.Count > 0)
             {
+                value1 = inputValues.Pop();
+
+                result = RpnOperations.PerformOperation(value1, 0, operation);
+                inputValues.Push(result);
+
+                resultReturn = result.ToString();
+            }
+            else if (inputValues.Count < 2)
+            {
+
                 throw new Exception("Calculations need to be between at least 2 values.");
             }
             else
